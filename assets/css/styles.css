@@ -1,0 +1,259 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: rgb(232, 232, 232);
+  --first-color-light: hsl(347, 76.6%, 56.5%);
+  --first-color-alt: hsl(234, 24.1%, 56.1%);
+  --second-color: hsl(0, 0%, 100%);
+  --dark-color: hsl(212, 40%, 12%);
+  --white-color: hsl(0, 0%, 100%);
+  --body-color: hsl(0, 0%, 100%);
+  --container-color: hsl(236, 38.1%, 16.5%);
+  --check-mark-color: rgb(13, 230, 49);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Quicksand', sans-serif;
+  --h3-font-size: 2.25rem;
+  --h4-font-size: 2.00rem;
+  --normal-font-size: 1rem;
+  --special-font-size: .75rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--white-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== CARD ===============*/
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.card__container{
+    padding-block: 2rem;
+}
+
+.card__content{
+    margin-inline: 1.75rem;
+    border-radius: 1.25rem;
+    overflow: hidden;
+    background-color: var(--white-color);
+}
+
+.card__article{
+    width: 350px;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+
+.card__image{
+    position: relative;
+    background-color: var(--first-color-light);
+    padding-top: 1.5rem;
+    margin-bottom: -.75rem;
+}
+
+.card__data{
+  background-color: var(--container-color);
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  text-align: relative;
+  position: relative;
+  z-index: 10;
+}
+
+.card__img{
+  block-size: 200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.card__shadow{
+  width: 200px;
+  height: 200px;
+  background-color: var(--first-color-alt);
+  border-radius: 50%;
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  filter: blur(45px)
+}
+
+
+.card__name{
+  font-size: var(--h3-font-size);
+  color: var(--first-color-light);
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+
+.card__price{
+  font-size: var(--h4-font-size);
+  font-weight: lighter;
+  color: var(--second-color);
+  text-align: center;
+  margin-bottom: 0rem;
+}
+.card__price__descrption{
+  font-size: var(--special-font-size);
+  color: var(--second-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+.card__title__description{
+  font-weight: 500;
+  text-align: justify;
+  margin-left: 20px;
+  margin-bottom: 1.5rem;
+}
+
+.card__description__feature__one{
+  font-weight: 500;
+  text-align: justify;
+  margin-left: 20px;
+  margin-bottom: .75rem;
+  
+}
+.card__description__feature__two{
+  font-weight: 500;
+  text-align: justify;
+  margin-left: 20px;
+  margin-bottom: .75rem;
+}
+.card__description__feature__three{
+  font-weight: 500;
+  text-align: justify;
+  margin-left: 20px;
+  margin-bottom: .75rem;
+}
+.card__description__feature__four{
+  font-weight: 500;
+  text-align: justify;
+  margin-left: 20px;
+  margin-bottom: .75rem;
+}
+
+.ri-checkbox-circle-line{
+  font-size: 20px;
+  color:var(--check-mark-color);
+  position:absolute;
+  left: 8px;
+  margin-top: 2px;
+  margin-left: 10px;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.card__button{
+  display: inline-block;
+  position: relative;
+  left: 113px;
+  background-color: var(--first-color-light);
+  padding: .75rem 1.5rem;
+  border-radius: 0.25rem;
+  color: var(--second-color);
+  font-weight: 600;
+}
+
+
+
+/* Swiper class */
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  content:'';
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  width: initial;
+  height: initial;
+  font-size: 3.5rem;
+  color: var(--first-color-light);
+  display: none;
+}
+
+.swiper-button-prev{
+  left: 20;
+}
+
+.swiper-button-next{
+  right: 20;
+}
+
+.swiper-pagination-bullet{
+  background-color: var(--first-color-alt);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: var(--first-color-light);
+  opacity: 1;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px){
+  .card__data{
+    padding: 1rem;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 768px){
+  .card__content{
+    margin-inline: 7rem;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev{
+    display:block;
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1120px){
+  .card__container{
+    max-width: 1120px;
+  }
+
+  .swiper-button-next{
+    right: -1rem;
+  }
+
+  .swiper-button-prev{
+    left: -1rem;
+  }
+}

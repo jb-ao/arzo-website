@@ -1,44 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Swiper</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body >
-    <section>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="img1.png"></div>
-              <div class="swiper-slide"><img src="img2.png"></div>
-              <div class="swiper-slide"><img src="img3.png"></div>
-              </div>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" crossorigin="">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive card slider - Bedimcode</title>
+   </head>
+   <body>
+      <section class="container">
+        <div class="card__container swiper">
+            <div class="card__content">
+                <div class="swiper-wrapper">
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/img/img1.png" alt="image" class="card__img">
+                            <div class="card__shadow"></div>    
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Análisis</h3>
+                            <h4 class="card__price"><b>$552</b> mxn</h4>
+                            <p class="card__price__descrption">Pago único</p>
+                            <p class="card__title__description">
+                                Con tu <b>análisis</b> conocerás:
+                            </p>
+                            <p class="card__description__feature__one"><i class="ri-checkbox-circle-line"></i>
+                                <b>Cotización</b>: cuál es la mejor forma de lograr tus objetivos
+                            </p>
+                            
+                            <p class="card__description__feature__two"><i class="ri-checkbox-circle-line"></i>
+                                <b>Pensión</b>: cuánto puedes recibir y cómo mejorarla
+                            </p>
+                            
+                            <p class="card__description__feature__three"><i class="ri-checkbox-circle-line"></i>
+                                <b>AFORE</b>: cómo funciona y qué impacto tiene en tu retiro
+                            </p>
+
+                            <p class="card__description__feature__four"><i class="ri-checkbox-circle-line"></i>
+                                <b>Ruta</b>: cuál es el mejor camino a tu pensión y por qué
+                            </p>
+
+
+                            <a href="#" class="card__button">¡Lo quiero!</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/img/img2.png" alt="image" class="card__img">
+                            <div class="card__shadow"></div>    
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Membresía</h3>
+                            <h4 class="card__price"><b>$184</b> mxn</h4>
+                            <p class="card__price__descrption">Pago mensual</p>
+                            <p class="card__title__description">
+                                Con tu <b>membresía</b> tendrás:
+                            </p>
+                            <p class="card__description__feature__one"><i class="ri-checkbox-circle-line"></i>
+                                <b>Acompañamiento</b>: asesoría ilimitada y seguimiento para lograr tus metas
+                            </p>
+                            
+                            <p class="card__description__feature__two"><i class="ri-checkbox-circle-line"></i>
+                                <b>Cotización</b>: tu inscripción y trámites estarán automatizados
+                            </p>
+                            
+                            <p class="card__description__feature__three"><i class="ri-checkbox-circle-line"></i>
+                                <b>Pago</b>: el pago del IMSS estará domiciliado a tu tarjeta
+                            </p>
+
+                            <p class="card__description__feature__four"><i class="ri-checkbox-circle-line"></i>
+                                <b>Documentos</b>: tus documentos al dia y disponibles en cualquier momento
+                            </p>
+
+
+                            <a href="#" class="card__button">¡Lo quiero!</a>
+                        </div>
+                    </article>
+
+                    <article class="card__article swiper-slide">
+                        <div class="card__image">
+                            <img src="assets/img/img3.png" alt="image" class="card__img">
+                            <div class="card__shadow"></div>    
+                        </div>
+
+                        <div class="card__data">
+                            <h3 class="card__name">Asesoría Personal</h3>
+                            <h4 class="card__price"><b>$1,840</b> mxn</h4>
+                            <p class="card__price__descrption">Pago único</p>
+                            <p class="card__title__description">
+                                Con nuestra <b>asesoría</b> obtendrás:
+                            </p>
+                            <p class="card__description__feature__one"><i class="ri-checkbox-circle-line"></i>
+                                <b>Diagnóstico</b>: revisión de tu situación legal y evaluación
+                            </p>
+                            
+                            <p class="card__description__feature__two"><i class="ri-checkbox-circle-line"></i>
+                                <b>Propuesta</b>: posibles opciones de soluciones legales
+                            </p>
+                            
+                            <p class="card__description__feature__three"><i class="ri-checkbox-circle-line"></i>
+                                <b>Acompañamiento virtual</b>: soporte para resolver obstáculo
+                            </p>
+
+                            <p class="card__description__feature__four"><i class="ri-checkbox-circle-line"></i>
+                                <b>Monitoreo</b>: rastreo digital de resultados y validación de información
+                            </p>
+
+
+                            <a href="#" class="card__button">¡Lo quiero!</a>
+                        </div>
+                    </article>
+
+                </div>
             </div>
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev">
+                <i class="ri-arrow-left-s-line"></i>
+            </div>
+            
+            <div class="swiper-button-next">
+                <i class="ri-arrow-right-s-line"></i>
+            </div>
+            <!-- Pagination -->
             <div class="swiper-pagination"></div>
-          </div>
-         
-        
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".swiper-container", {
-          effect: "coverflow",
-          grabCursor: true,
-          centeredSlides: true,
-          slidesPerView: "auto",
-          coverflowEffect: {
-            rotate: 30,
-            stretch: 0,
-            depth: 200,
-            modifier: 1,
-            slideShadows: true,
-          },
-          pagination: {
-            el: ".swiper-pagination",
-          },
-        });
-      </script>
-</body>
+
+        </div>
+      </section>
+      
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
