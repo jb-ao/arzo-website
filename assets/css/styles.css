@@ -279,6 +279,17 @@ img {
       margin-bottom: 12px;
     }
 
+    .card__button{ /*CHANGE IN MOBILE TO CENTER*/
+      display: inline-block;
+      position: relative;
+      left: 100px;
+      background-color: var(--first-color-light);
+      padding: .75rem 1.5rem;
+      border-radius: 0.25rem;
+      color: var(--second-color);
+      font-weight: 600;
+    }
+
 }
 
 
