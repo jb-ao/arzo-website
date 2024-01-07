@@ -22,6 +22,9 @@
   --h4-font-size: 22px;
   --normal-font-size: 14px;
   --special-font-size: 10px;
+  --mobile-title-font-size: 24px;
+  --mobile-socondary-title-font-size: 14px;
+  --mobile-text-font-size: 11px;
 }
 
 /*=============== BASE ===============*/
@@ -81,16 +84,16 @@ img {
     margin-bottom: -.75rem;
 }
 
-.card__data{
+.card__data{  /*CHANGE IN MOBILE*/
   background-color: var(--container-color);
-  padding: 1.5rem 2rem;
-  border-radius: 1rem;
+  padding: 24px 32px; /*top and bottom 24px and left and right 32px*/
+  border-radius: 16px;
   text-align: relative;
   position: relative;
   z-index: 10;
 }
 
-.card__img{
+.card__img{ /*CHANGE IN MOBILE*/
   block-size: 120px;
   margin: 0 auto;
   position: relative;
@@ -111,7 +114,7 @@ img {
 }
 
 
-.card__name{
+.card__name{ /*CHANGE IN MOBILE*/
   font-size: var(--h3-font-size);
   color: var(--first-color-light);
   text-align: center;
@@ -119,14 +122,14 @@ img {
 }
 
 
-.card__price{
+.card__price{ /*CHANGE IN MOBILE*/
   font-size: var(--h4-font-size);
   font-weight: lighter;
   color: var(--second-color);
   text-align: center;
   margin-bottom: 0rem;
 }
-.card__price__descrption{
+.card__price__descrption{  /*CHANGE IN MOBILE*/
   font-size: var(--special-font-size);
   color: var(--second-color);
   text-align: center;
@@ -167,7 +170,7 @@ img {
   margin-bottom: 1.75rem;
 }
 
-.ri-checkbox-circle-line{
+.ri-checkbox-circle-line{ /*CHANGE IN MOBILE*/
   font-size: 20px;
   color:var(--check-mark-color);
   position:absolute;
@@ -178,7 +181,7 @@ img {
   font-weight: 600;
 }
 
-.card__button{
+.card__button{ /*CHANGE IN MOBILE TO CENTER*/
   display: inline-block;
   position: relative;
   left: 113px;
@@ -215,6 +218,7 @@ img {
 }
 
 .swiper-pagination-bullet{
+  margin-top: 10px;
   background-color: var(--first-color-alt);
   opacity: 1;
 }
@@ -226,19 +230,57 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px){
-  .card__data{
-    padding: 1rem;
-  }
 
+@media only screen
+  and (max-width: 428px)
+  and (max-height: 932px)
+  and (-webkit-device-pixel-ratio: 3){
 
+    body {
+      font-size: var(--mobile-title-font-size);
+    }
 
+    .card__data{  /*CHANGE IN MOBILE*/
+      background-color: var(--container-color);
+      padding: 12px 16px; /*top and bottom 24px and left and right 32px*/
+      border-radius: 16px;
+      text-align: relative;
+      position: relative;
+      z-index: 10;
+    }
+    
+    .card__img{ /*CHANGE IN MOBILE*/
+      block-size: 60px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 5;
+    }
 
+    .card__name{ /*CHANGE IN MOBILE*/
+      font-size: var(--mobile-title-font-size);
+      color: var(--first-color-light);
+      text-align: center;
+      margin-bottom: 6px;
+    }
+    
+    
+    .card__price{ /*CHANGE IN MOBILE*/
+      font-size: var(--mobile-socondary-title-font-size);
+      font-weight: lighter;
+      color: var(--second-color);
+      text-align: center;
+      margin-bottom: 0rem;
+    }
 
-
-
+    .card__price__descrption{  /*CHANGE IN MOBILE*/
+      font-size: var(--mobile-text-font-size);
+      color: var(--second-color);
+      text-align: center;
+      margin-bottom: 12px;
+    }
 
 }
+
 
 /* For medium devices */
 @media screen and (min-width: 768px){
